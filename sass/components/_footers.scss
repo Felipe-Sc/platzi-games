@@ -1,0 +1,94 @@
+.footer--principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top: 30px;
+  padding: 0 20px 20px;
+  background-color: $color-primario;
+  @include media(desktop-s) {
+    flex-direction: row;
+    height: 90px;
+  }
+}
+
+.logo--footer {
+  width: 250px;
+  img {
+    width: 100%;
+  }
+  @include media (desktop-s) {
+    margin-top: -20px;
+  }
+}
+
+.navContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include media (desktop-s) {
+    flex-direction: row;
+  }
+}
+
+.nav--footer {
+  @include media (desktop-s) {
+    margin-right: 20px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    padding-left: 0;
+    li {
+      list-style: none;
+      margin-right: 25px;
+      @include media(desktop-s) {
+        margin-right: 30px;
+      }
+    }
+    a {
+      color: $color-claro;
+      @include titulos($Fuente2);
+    }
+    @include media(desktop-s) {
+      padding-left: 0px;
+    }
+  }
+}
+
+.nav--social {
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-top: 25px;
+    text-align: center;
+    li {
+      list-style: none;
+      margin-right: 25px;
+      color: $color-claro;
+      &:first-child {
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      color: $color-claro;
+      @include titulos($Fuente2);
+    }
+    @include media (desktop-s) {
+      padding-top: 35px;
+    }
+  }
+  @include media(desktop-s) {
+    margin-left: auto;
+  }
+}
